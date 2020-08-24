@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/kj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="靠近"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/yl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="远离"
+        />
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="invisible"
+
+            />
+
+        <VideoView
+            android:id="@+id/topvideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/moren" />
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_ewm"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:id="@+id/tv_ewm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tv_banben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_version"
+            android:layout_alignStart="@+id/tv_version"
+            android:layout_alignLeft="@+id/tv_version"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:alpha="0.5"
+            android:text="EXMIRO©ver1.1"
+
+            android:textColor="#fff"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:alpha="0.5"
+            android:paddingLeft="5dp"
+            android:text="ExMIRO高速镜网©v1.1"
+            android:textColor="#fff" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:alpha="0.5"
+            android:paddingLeft="5dp"
+            android:text="400-6565-888"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivbanshou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="52px"
+        android:layout_marginBottom="50px"
+        />
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="tttt"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#fff"
+        android:text="tttt"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_test"
+        android:hint="输入亮度1-255"
+        android:inputType="number"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et"
+        android:text="确定"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#000"></RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/toprl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
